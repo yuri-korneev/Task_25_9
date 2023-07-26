@@ -1,0 +1,20 @@
+{
+    "name": "ura/php_db",
+    "description": "task_25_9",
+    "type": "project",
+    "require": {
+        "gabordemooij/redbean": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app\\"
+        }
+    },
+    "authors": [
+        {
+            "name": "yuri-korneev",
+            "email": "yuri.korneev666@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
