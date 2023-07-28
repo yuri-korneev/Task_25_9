@@ -227,5 +227,9 @@ padding-top:7px;
     width: 100%
 }
 
+.img-responsive {
+    max-width: 100%;
+    }
+
 
 

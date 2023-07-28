@@ -2,13 +2,13 @@
 
 namespace App\controllers;
 use App\core\Controller;
-use App\models\Login_Model;
+use App\models\Login_model;
 use App\core\View;
 
 class Login extends Controller{ 
 
     public function __construct() {
-        $this->model = new Login_Model();
+        $this->model = new Login_model();
         $this->view = new View();
     }
 

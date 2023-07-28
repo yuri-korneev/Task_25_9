@@ -48,7 +48,7 @@ class Main_model extends Model
                     $pathSmall = GALLERY_SMALL.$name;
                     $created = date('Y-m-d H:i:s');
                         
-                    if (empty($name) || empty($parts['extension'])) { 
+                    if (empty($name) || empty($parts['extension']) || in_array($parts['extension'], ALLOWED_TYPES)) { 
 
                         $error = 'Недопустимый тип файла';
 
@@ -79,7 +79,7 @@ class Main_model extends Model
                 $userID = $this->connectDB->getUserID($_SESSION['logged_user']->email);
                
 
-                if (!empty($success) && $this->service->img_resize($pathBig, $pathSmall, 200, 0) && $this->connectDB->createImage($userID, $pathBig, $pathSmall, $created)) {
+                if (!empty($success) && $this->service->img_resize($pathBig, $pathSmall, 200, 200) && $this->connectDB->createImage($userID, $pathBig, $pathSmall, $created)) {
 
                     $data[] = '<p style="color: green">' . $success . '</p>';  
                 }

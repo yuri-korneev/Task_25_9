@@ -11,7 +11,7 @@ define('MODEL', APP . 'models' . DIRECTORY_SEPARATOR);
 define('VIEW', APP . 'views' . DIRECTORY_SEPARATOR);
 define('CONTROLLER', APP . 'controllers' . DIRECTORY_SEPARATOR);
 
-define('UPLOAD_MAX_SIZE', 3000000);
+define('UPLOAD_MAX_SIZE', 4000000);
 define('ALLOWED_TYPES', ['jpeg', 'jpg', 'png', 'gif']);
 
 define('GALLERY_BIG', 'gallery_big' . DIRECTORY_SEPARATOR);

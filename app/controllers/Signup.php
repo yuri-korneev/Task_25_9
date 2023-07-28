@@ -2,13 +2,13 @@
 
 namespace App\controllers;
 use App\core\Controller;
-use App\models\Signup_Model;
+use App\models\Signup_model;
 use App\core\View;
 
 class Signup extends Controller{ 
 
     public function __construct() {
-        $this->model = new Signup_Model();
+        $this->model = new Signup_model();
         $this->view = new View();
     }
 

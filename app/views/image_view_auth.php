@@ -3,7 +3,7 @@
     Картинка
 </h1>
 
-<img src ="<?=$data1?>">
+<img src ="<?=$data1?>" class="img-responsive">
 
 <br>
 

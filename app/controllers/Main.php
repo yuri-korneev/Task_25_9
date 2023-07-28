@@ -2,7 +2,7 @@
 
 namespace App\controllers;
 use App\core\Controller;
-use App\models\Main_Model;
+use App\models\Main_model;
 use App\core\View;
 
 
@@ -10,7 +10,7 @@ class Main extends Controller{
 
 
     public function __construct() {
-        $this->model = new Main_Model();
+        $this->model = new Main_model();
         $this->view = new View();
     }
 

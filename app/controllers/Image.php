@@ -2,7 +2,7 @@
 
 namespace App\controllers;
 use App\core\Controller;
-use App\models\Image_Model;
+use App\models\Image_model;
 use App\core\View;
 
 
@@ -12,7 +12,7 @@ class Image extends Controller{
 
     public function __construct() {
         
-        $this->model = new Image_Model();
+        $this->model = new Image_model();
         $this->view = new View();
 
     }
